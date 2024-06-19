@@ -42,4 +42,4 @@ const Notification = sequelize.define('Notification', {
 Notification.belongsTo(Vendor, { foreignKey: 'VendorID' });
 Notification.belongsTo(Order, { foreignKey: 'OrderID' });
 
-export default Notification;
+return Notification;

@@ -7,4 +7,4 @@ const UserManagement = () => {
   )
 }
 
-export default UserManagement
+return UserManagement

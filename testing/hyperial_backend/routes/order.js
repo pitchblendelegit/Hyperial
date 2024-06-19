@@ -171,4 +171,4 @@ router.post('/notifications/:notificationId/approve', async (req, res) => {
   }
 });
 
-export default router;
+return router;

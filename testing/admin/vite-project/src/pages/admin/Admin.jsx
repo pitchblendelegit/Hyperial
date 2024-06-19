@@ -27,4 +27,4 @@ const Admin = () => {
   )
 }
 
-export default Admin
+return Admin

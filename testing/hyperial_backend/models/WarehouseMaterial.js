@@ -36,4 +36,4 @@ const WarehouseMaterial = sequelize.define('WarehouseMaterial', {
   timestamps: false
 });
 
-export default WarehouseMaterial;
+return WarehouseMaterial;

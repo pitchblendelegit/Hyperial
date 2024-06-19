@@ -7,4 +7,4 @@ const Procurement = () => {
   )
 }
 
-export default Procurement
+return Procurement

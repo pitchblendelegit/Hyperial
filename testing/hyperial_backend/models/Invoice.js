@@ -17,4 +17,4 @@ const Invoice = sequelize.define('Invoice', {
 
 Invoice.belongsTo(Order, { foreignKey: 'OrderId' });
 
-export default Invoice;
+return Invoice;

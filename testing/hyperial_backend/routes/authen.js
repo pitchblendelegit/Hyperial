@@ -1,8 +1,8 @@
-import express from 'express';
-import jwt from 'jsonwebtoken';
-import bcrypt from 'bcryptjs';
-import User from '../models/User.js';
-import Vendor from '../models/Vendor.js';
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
+const User = require('../models/User.js');
+const Vendor = require('../models/Vendor.js');  
 
 const router = express.Router();
 const JWT_SECRET = 'your_jwt_secret_key';
@@ -134,4 +134,4 @@ router.get('/staff', authenticateToken, async (req, res) => {
   }
 });
 
-export default router;
+return router;

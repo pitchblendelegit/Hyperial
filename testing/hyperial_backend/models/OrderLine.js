@@ -37,4 +37,4 @@ const OrderLine = sequelize.define('OrderLine', {
 OrderLine.belongsTo(Order, { foreignKey: 'OrderID' });
 OrderLine.belongsTo(VendorMaterial, { foreignKey: 'VendorMaterialID' });
 
-export default OrderLine;
+return OrderLine;

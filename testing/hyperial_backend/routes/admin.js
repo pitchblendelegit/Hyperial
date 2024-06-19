@@ -1,5 +1,5 @@
-import express from 'express';
-import WarehouseMaterial from '../models/WarehouseMaterial.js';
+const express = require('express');
+const WarehouseMaterial = require('../models/WarehouseMaterial.js');
 const router = express.Router();
 
 // Mendapatkan semua warehouse materials
@@ -66,4 +66,4 @@ router.delete('/deleteMaterial/:id', async (req, res) => {
     }
 });
 
-export default router;
+return router;

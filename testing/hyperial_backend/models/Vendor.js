@@ -85,4 +85,4 @@ const Vendor = sequelize.define('Vendor', { // Gunakan instance sequelize untuk 
   timestamps: false,
 });
 
-export default Vendor;
+return Vendor;

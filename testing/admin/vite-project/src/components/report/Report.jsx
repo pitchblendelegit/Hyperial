@@ -7,4 +7,4 @@ const Report = () => {
   )
 }
 
-export default Report
+return Report

@@ -92,4 +92,4 @@ const Inventory = () => {
     );
 }
 
-export default Inventory;
+return Inventory;

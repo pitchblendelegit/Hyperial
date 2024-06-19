@@ -16,4 +16,4 @@ const Shipment = sequelize.define('Shipment', {
 
 Shipment.belongsTo(Order, { foreignKey: 'OrderId' });
 
-export default Shipment;
+return Shipment;

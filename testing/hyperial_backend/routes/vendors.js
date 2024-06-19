@@ -154,4 +154,4 @@ router.delete('/delete-material/:id', async (req, res) => {
   }
 });
 
-export default router;
+return router;

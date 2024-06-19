@@ -1,21 +1,22 @@
-import express, { json as expressJson } from 'express';
-import cors from 'cors';
-import session from 'express-session';
-import cookieParser from 'cookie-parser';
-import pkg from 'body-parser';
-import sequelize from './config/database.js'; // Impor instance sequelize
-import jwt from 'jsonwebtoken';
-import authRoutes from './routes/authen.js';
-import vendorRoutes from './routes/vendors.js';
-import adminRoutes from './routes/admin.js';
-import orderRoutes from './routes/order.js'
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
+const pkg = require('body-parser');
+const sequelize = require('./config/database.js'); // Impor instance sequelize
+const jwt = require('jsonwebtoken');
+const authRoutes = require('./routes/authen.js');
+const vendorRoutes = require('./routes/vendors.js');
+const adminRoutes = require('./routes/admin.js');
+const orderRoutes = require('./routes/order.js')
 
 const { json: bodyParserJson } = pkg;
 const JWT_SECRET = 'your_secret_key_here';
 const app = express();
 const port = 5000;
 
-const allowedOrigins = ['http://localhost:3000', 'http://localhost:5173'];
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:3306'];
 
 const corsOptions = {
   origin: (origin, callback) => {
@@ -30,7 +31,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.use(expressJson());
 app.use(cookieParser());
 app.use(bodyParserJson());
 

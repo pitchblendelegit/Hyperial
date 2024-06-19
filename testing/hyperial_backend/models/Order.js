@@ -38,4 +38,4 @@ const Order = sequelize.define('Order', {
 
 Order.belongsTo(Vendor, { foreignKey: 'VendorID' });
 
-export default Order;
+return Order;

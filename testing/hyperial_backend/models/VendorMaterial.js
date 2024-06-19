@@ -27,4 +27,4 @@ const VendorMaterial = sequelize.define('VendorMaterial', {
 
 VendorMaterial.belongsTo(Vendor, { foreignKey: 'VendorId' });
 
-export default VendorMaterial;
+return VendorMaterial;
